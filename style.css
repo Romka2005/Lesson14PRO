@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Sum{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1200px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    justify-content: space-between;
+}
+.main{
+    width: 300px;
+    height: 100%;
+    background: rgb(56, 56, 56);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+img{
+    width: 300px;
+    height: 300px;
+    background: white;
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+.box_name{
+    width: 110%;
+    text-align: end;
+}
+.box{
+    width: 100%;
+    background: rgb(223, 27, 27);
+    padding: 5px;
+}
+.box.obra{
+    margin-bottom: 160px;
+    margin-top: 105px;
+}
+.box.cont{
+    margin-top: 35px;
+}
+.box.pro{
+    margin-top: 135px;
+}
+.stats{
+    width: 900px;
+    margin-top: 30px;
+    padding-right: 40px;
+}
+.nameprof{
+    width: 60%;
+}
+.nameprof h1{
+    color: rgb(223, 27, 27);
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 100;
+}
+.nameprof h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: 8px;
+    color: rgb(100, 100, 100);
+}
+
+
+.contacts{
+    margin-top: 105px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contacts h1{
+    color: rgb(223, 27, 27);
+}
+.contacts div h2{
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+.obr{
+    width: 100%;
+    margin-top: 20px;
+    line-height: 2;
+}
+.obr h1{
+    color: rgb(223, 27, 27);
+}
+.obr h2{
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+} 
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(223, 27, 27);
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+}
+.skill{
+    width: 45%;
+}
+.prog{
+    width: 100%;
+    height: 13px;
+    border-radius: 20px;
+    background: rgb(196, 196, 196);
+}
+.red{
+    height: 100%;
+    background: rgb(223, 27, 27);
+    border-radius: 10px;
+}
+.red.phot{
+    width: 40%;
+}
+.red.lang{
+    width: 80%;
+}
+.red.pro{
+    width: 90%;
+}
+.red.des{
+    width: 70%;
+}
+.name{
+    margin-bottom: 10px;
+}
+.pro{
+    margin-top: 40px;
+}
+.pro li a{
+    text-decoration: none;
+    color: rgb(223, 27, 27);
+    font-size: 25px;
+    line-height: 1.7;
+    transition: all .5s;
+}
+.pro li a:hover{
+    color: rgb(128, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1300px){
+    .main{
+        width: 100%;
+    }
+    .Sum{
+        flex-wrap: wrap;
+    }
+}

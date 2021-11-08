@@ -13,20 +13,22 @@
     justify-content: space-between;
 }
 .main{
-    width: 300px;
+    width: 20%;
     height: 100%;
     background: rgb(56, 56, 56);
     color: white;
     font-size: 30px;
     font-weight: 700;
 }
-img{
-    width: 300px;
-    height: 300px;
-    background: white;
+.image{
     position: relative;
     top: 30px;
     left: 60px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 .box_name{
     width: 110%;
@@ -36,6 +38,7 @@ img{
     width: 100%;
     background: rgb(223, 27, 27);
     padding: 5px;
+    color: white;
 }
 .box.obra{
     margin-bottom: 160px;
@@ -47,13 +50,16 @@ img{
 .box.pro{
     margin-top: 135px;
 }
+.box1{
+    display: none;
+}
 .stats{
-    width: 900px;
+    width: 70%;
     margin-top: 30px;
     padding-right: 40px;
 }
 .nameprof{
-    width: 60%;
+    width: 50%;
 }
 .nameprof h1{
     color: rgb(223, 27, 27);
@@ -135,17 +141,17 @@ img{
 .name{
     margin-bottom: 10px;
 }
-.pro{
+.proj{
     margin-top: 40px;
 }
-.pro li a{
+.proj li a{
     text-decoration: none;
     color: rgb(223, 27, 27);
     font-size: 25px;
     line-height: 1.7;
     transition: all .5s;
 }
-.pro li a:hover{
+.proj li a:hover{
     color: rgb(128, 0, 0);
 }
 
@@ -161,8 +167,101 @@ img{
 @media (max-width:1300px){
     .main{
         width: 100%;
+        height: 25%;
+        padding: 20px;
+    }
+    .image{
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        
+    }
+    .stats{     
+        padding: 0;
+        margin: 70px auto;
+        text-align: center;
+        width: 90%;
+    }
+    .nameprof{
+        margin: 0 auto;
+        width: 100%;
     }
     .Sum{
         flex-wrap: wrap;
+    }
+    .box_name{
+        display: none;
+    }
+    .stats.box{
+        display: block;
+        width: 150%;
+    }
+    .stats .box1{
+        display: block;
+        background: rgb(223, 27, 27);
+        padding: 5px;
+        color: white;
+    }
+    .stats .cont{
+        margin: 50px 0;
+    }
+    .contacts{
+        margin-top: 60px;
+    }
+    .stats .obra{
+        margin: 60px 0;
+    }
+    .stats .skil{
+        margin: 60px 0;
+    }
+    .stats .proj1{
+        margin: 60px 0;
+    }
+    .proj{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (max-width:900px){
+    .contacts{
+        flex-direction: column;
+    }
+    .contacts{
+        height: 400px;
+    }
+}
+@media (max-width:700px){
+    .skills{
+        flex-wrap: inherit;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+    }
+    .skill{
+        width: 90%;
+    }
+    .proj li a{
+        font-size: 17px;
+    }
+    .proj li{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px){
+    .nameprof h1{
+        font-size: 50px;
+    }
+    .nameprof h3{
+        font-size: 12px;
+    }
+    .proj li a{
+        font-size: 14px;
+    }
+    .proj li{
+        font-size: 10px;
     }
 }
